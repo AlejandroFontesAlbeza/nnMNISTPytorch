@@ -106,12 +106,10 @@ def main():
     ax[0].plot(epoch_list, accuracies)
     ax[0].set_title('Accuracy')
     ax[0].set_xlabel('Epoch')
-    ax[0].set_ylabel('Accuracy')
 
     ax[1].plot(epoch_list, losses)
     ax[1].set_title('Training Loss')
     ax[1].set_xlabel('Epoch')
-    ax[1].set_ylabel('Loss')
 
     plt.savefig('resources/training_fig.png')
 
