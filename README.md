@@ -79,7 +79,7 @@ This minimal architecture allows the training behavior to remain interpretable a
 
 - Model weights saved using `torch.save`
 
-#### Training Time & CPU vs GPU Observations
+### Training Time & CPU vs GPU Observations
 
 Training was intentionally performed on CPU to match the from-scratch implementation.
 
@@ -99,7 +99,7 @@ This highlights an important practical insight:
 
 This avoids unnecessary CUDA dependencies and significantly reduces the size of the virtual environment. That is why I installed  to the venv cpu pytorch wheel: `pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu`
 
-#### Inference utility
+### Inference utility
 
 Finally at the `inference.py` script:
 
@@ -132,7 +132,7 @@ This comparison highlights an important conclusion:
 - *"For building and training neural networks in practice, using a professional and well-maintained framework is generally the better option, as it provides optimized, reliable, and production-ready tools."*
 
 
-#### Related Project
+### Related Project
 
 **nnMNISTnoFW** – Neural network implemented from scratch using NumPy and Pandas
 
