@@ -5,11 +5,11 @@ import numpy as np
 import pandas as pd
 
 
-dataset = pd.read_csv('dataset/test.csv')
+dataset = pd.read_csv('dataset/test.csv.zip', compression='zip')
 data = np.array(dataset)
 
 
-idx = 102
+idx = 105
 image = data[idx]        # shape = (784,)
 image_tensor = torch.tensor(image, dtype=torch.float32).unsqueeze(0)  # añadir batch dim → (1, 784)
 image_tensor /= 255.0

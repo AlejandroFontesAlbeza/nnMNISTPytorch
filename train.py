@@ -5,7 +5,7 @@ import torch.nn as nn
 from torch.utils.data import TensorDataset, DataLoader
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('dataset/train.csv')
+data = pd.read_csv('dataset/train.csv.zip', compression='zip')
 data = np.array(data)
 m,n = data.shape
 
